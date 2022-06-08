@@ -1,37 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Countries</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countries</title>
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
-  <!-- GOOGLE FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet">
-</head>
-<body>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- SITE-HEADER -->
+    <header class="site-header">
+      <div class="site-header-container container">
+        <h2 class="site-header-heading">Where in the world?</h2>
+        <div class="dark-mode">
+          <span class="dark-mode-logo"></span>
+          <p class="dark-mode-text">Dark Mode</p>
 
-<!-- SITE-HEADER -->
-<header class="site-header">
-  <div class="site-header-container container">
-    <h2 class="site-header-heading">Where in the world?</h2>
-    <div class="dark-mode">
-      <span class="dark-mode-logo"></span>
-      <p class="dark-mode-text">Dark Mode</p>
-    </div>
-  </div>
-</header>
+        </div>
+      </div>
+    </header>
 
-  <main class="main-content">
+    <!-- MAIN-CONTENT -->
+    <main class="main-content">
+      <div class="main-content-container container">
+        <div class="searches">
+          <form class="form-search" action="">
+            <i class="icon-search">
+              <svg width="18" height="18" fill="CurrentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 11h-.8l-.3-.3c1-1.1 1.6-2.6 1.6-4.2C13 2.9 10.1 0 6.5 0S0 2.9 0 6.5 2.9 13 6.5 13c1.6 0 3.1-.6 4.2-1.6l.3.3v.8l5 5 1.5-1.5-5-5Zm-6 0C4 11 2 9 2 6.5S4 2 6.5 2 11 4 11 6.5 9 11 6.5 11Z" fill="#848484"/></svg>
+            </i>
+            <input class="search-input" type="search" name="search" aria-label="Search" placeholder="Search for a country…"
+            />
+          </form>
+          <select class="search-country" name="" id="">
+            <option disabled selected value="0">Filter by Region</option>
+            <option value="afrika">Africa</option>
+            <option value="amerika">America</option>
+            <option value="asia">Asia</option>
+            <option value="europe">Europe</option>
+            <option value="oceania">Oceania</option>
+          </select>
+        </div>
 
-  </main>
+        <div class="countries">
+          <ul class="countries-list">
+            <li class="countries-item">
+              <a href="#">
+                <img
+                  src="./img/flag-germany.svg"
+                  alt="Flag of Germany"
+                  width="260"
+                  height="160"
+                />
+              </a>
+              <div class="country-info">
+                <h3 class="country-info-heading">Germany</h3>
+                <ul class="country-info-list">
+                  <li class="country-info-item">Population: 81,770,900</li>
+                  <li class="country-info-item">Region: Europe</li>
+                  <li class="country-info-item">Capital: Berlin</li>
+                </ul>
+              </div>
+            </li>
+            <li class="countries-item">
+              <a href="#">
+                <img
+                  src="./img/flag-usa.svg"
+                  alt="Flag of Germany"
+                  width="260"
+                  height="160"
+                />
+              </a>
+              <div class="country-info">
+                <h3 class="country-info-heading">United States of America</h3>
+                <ul class="country-info-list">
+                  <li class="country-info-item">Population: 323,947,000</li>
+                  <li class="country-info-item">Region: Americas</li>
+                  <li class="country-info-item">Capital: Washington, D.C.</li>
+                </ul>
+              </div>
+            </li>
+            <li class="countries-item">
+              <a href="#">
+                <img
+                  src="./img/flag-brazil.svg"
+                  alt="Flag of Germany"
+                  width="260"
+                  height="160"
+                />
+              </a>
+              <div class="country-info">
+                <h3 class="country-info-heading">Brazil</h3>
+                <ul class="country-info-list">
+                  <li class="country-info-item">Population: 206,135,893</li>
+                  <li class="country-info-item">Region: Americas</li>
+                  <li class="country-info-item">Capital: Brasília</li>
+                </ul>
+              </div>
+            </li>
+            <li class="countries-item">
+              <a href="#">
+                <img
+                  src="./img/flag-iceland.svg"
+                  alt="Flag of Germany"
+                  width="260"
+                  height="160"
+                />
+              </a>
+              <div class="country-info">
+                <h3 class="country-info-heading">Iceland</h3>
+                <ul class="country-info-list">
+                  <li class="country-info-item">Population: 334,300</li>
+                  <li class="country-info-item">Region: Europe</li>
+                  <li class="country-info-item">Capital: Reykjavík</li>
+                </ul>
+              </div>
+            </li>
+            <li class="countries-item">
+              <a href="#">
+                <img
+                  src="./img/flag-afghanistan.svg"
+                  alt="Flag of Germany"
+                  width="260"
+                  height="160"
+                />
+              </a>
+              <div class="country-info">
+                <h3 class="country-info-heading">Afghanistan</h3>
+                <ul class="country-info-list">
+                  <li class="country-info-item">Population: 27,657,145</li>
+                  <li class="country-info-item">Region: Asia</li>
+                  <li class="country-info-item">Capital: Kabul</li>
+                </ul>
+              </div>
+            </li>
+            <li class="countries-item">
+              <a href="#">
+                <img
+                  src="./img/flag-aland-islands.svg"
+                  alt="Flag of Germany"
+                  width="260"
+                  height="160"
+                />
+              </a>
+              <div class="country-info">
+                <h3 class="country-info-heading">Åland Islands</h3>
+                <ul class="country-info-list">
+                  <li class="country-info-item">Population: 28,875</li>
+                  <li class="country-info-item">Region: Europe</li>
+                  <li class="country-info-item">Capital: Mariehamn</li>
+                </ul>
+              </div>
+            </li>
+            <li class="countries-item">
+              <a href="#">
+                <img
+                  src="./img/flag-albaniya.svg"
+                  alt="Flag of Germany"
+                  width="260"
+                  height="160"
+                />
+              </a>
+              <div class="country-info">
+                <h3 class="country-info-heading">Albania</h3>
+                <ul class="country-info-list">
+                  <li class="country-info-item">Population: 2,886,026</li>
+                  <li class="country-info-item">Region: Europe</li>
+                  <li class="country-info-item">Capital: Tirana</li>
+                </ul>
+              </div>
+            </li>
+            <li class="countries-item">
+              <a href="#">
+                <img
+                  src="./img/flag-algeria.svg"
+                  alt="Flag of Germany"
+                  width="260"
+                  height="160"
+                />
+              </a>
+              <div class="country-info">
+                <h3 class="country-info-heading">Algeria</h3>
+                <ul class="country-info-list">
+                  <li class="country-info-item">Population: 40,400,000</li>
+                  <li class="country-info-item">Region: Africa</li>
+                  <li class="country-info-item">Capital: Algiers</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
 
-  <script src="js/main.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>
