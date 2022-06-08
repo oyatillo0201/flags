@@ -184,6 +184,10 @@ img {
   width: 100%;
 }
 
+.country-info {
+  margin-left: 24px;
+}
+
 .country-info-heading {
   margin: 0;
   margin-bottom: 16px;
