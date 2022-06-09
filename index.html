@@ -35,23 +35,19 @@
     <!-- MAIN-CONTENT -->
     <main class="main-content">
       <div class="main-content-container container">
-        <div class="searches">
-          <form class="form-search" action="">
-            <i class="icon-search">
-              <svg width="18" height="18" fill="CurrentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 11h-.8l-.3-.3c1-1.1 1.6-2.6 1.6-4.2C13 2.9 10.1 0 6.5 0S0 2.9 0 6.5 2.9 13 6.5 13c1.6 0 3.1-.6 4.2-1.6l.3.3v.8l5 5 1.5-1.5-5-5Zm-6 0C4 11 2 9 2 6.5S4 2 6.5 2 11 4 11 6.5 9 11 6.5 11Z" fill="#848484"/></svg>
-            </i>
-            <input class="search-input" type="search" name="search" aria-label="Search" placeholder="Search for a country…"
-            />
+        <form class="filters" action="https://echo.htmlacademy.ru">
+            <input class="filters-search-input" type="search" name="search" aria-label="Country name" placeholder="Search for a country…" required>
+            <select class="filters-region-select" name="region" aria-label="Regions">
+              <option disabled selected value="0">Filter by Region</option>
+              <option value="afrika">Africa</option>
+              <option value="amerika">America</option>
+              <option value="asia">Asia</option>
+              <option value="europe">Europe</option>
+              <option value="oceania">Oceania</option>
+            </select>
           </form>
-          <select class="search-country" name="" id="">
-            <option disabled selected value="0">Filter by Region</option>
-            <option value="afrika">Africa</option>
-            <option value="amerika">America</option>
-            <option value="asia">Asia</option>
-            <option value="europe">Europe</option>
-            <option value="oceania">Oceania</option>
-          </select>
-        </div>
+
+
 
         <div class="countries">
           <ul class="countries-list">

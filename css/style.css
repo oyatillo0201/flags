@@ -59,9 +59,12 @@ a {
   margin-right: auto;
 }
 
+
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 
@@ -124,56 +127,39 @@ a {
   font-weight: 600;
 }
 
-/* MAIN-CONTENT */
-.searches {
+
+/* FILTERS */
+.filters {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 48px;
-  margin-bottom: 48px;
 }
 
-.form-search {
-  display: flex;
-  align-items: center;
-  padding: 18px 34px;
-  background-color: var(--color-white);
-  border-radius: 5px;
-  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
-}
-
-.icon-search {
-  display: flex;
-  margin-right: 24px;
-}
-
-.search-input {
-  width: 380px;
+.filters-search-input {
+  min-width: 480px;
+  padding: 18px 74px;
   border: 0;
-  outline: none;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: var(--input-color);
-  background-color: var(--color-white);
-}
-
-.search-input::placeholder {
-  color: var(--input-color);
-}
-
-.search-country {
-  padding: 0;
-  margin: 0;
-  padding: 18px 24px;
-  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
   border-radius: 5px;
-  border: none;
-  outline: none;
-  color: var(--input-color);
-  background-color: var(--color-white);
+  background-color: var(--element-bg);
+  color: var(--text-color);
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.06);
 }
+
+.filters-search-input::placeholder {
+  color: var(--text-color);
+}
+
+.filters-region-select {
+  min-width: 200px;
+  padding: 18px 24px;
+  border-radius: 5px;
+  background-color: var(--element-bg);
+  color: var(--text-color);
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.06);
+}
+
+
+
 
 .countries-list {
   margin: 0;
@@ -204,7 +190,7 @@ a {
   font-weight: 800;
   font-size: 18px;
   line-height: 26px;
-  color: var(--text-heading);
+  color: var(--text-color);
 }
 
 .country-info-list {
@@ -218,7 +204,7 @@ a {
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
-  color: var(--text-heading);
+  color: var(--text-color);
 }
 
 .country-info-item:not(:last-child) {
