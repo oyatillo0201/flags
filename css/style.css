@@ -140,6 +140,19 @@ a {
   margin-bottom: 48px;
 }
 
+.filters-search-wrapper {
+  position: relative;
+}
+
+.filter-search-icon {
+  position: absolute;
+  left: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-color);
+  pointer-events: none;
+}
+
 .filters-search-input {
   min-width: 480px;
   padding: 18px 74px;
@@ -239,6 +252,7 @@ a {
 
 /* COUNTRY-PAGE */
 .country-page-back-wrapper {
+  position: relative;
   margin-bottom: 80px;
 }
 
@@ -261,9 +275,13 @@ a {
 }
 
 .country-page-back-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-38%);
   width: 20px;
   height: 20px;
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 
 .country-page-back-text {
